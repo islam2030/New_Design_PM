@@ -103,6 +103,10 @@ ul {
     padding: 0 !important;
 }
 
+.padding-bottom {
+    padding-bottom: 50px;
+}
+
 .no-margin {
     margin-right: auto;
     margin-left: auto;
@@ -252,7 +256,6 @@ button:focus {
 
 .wrapper {
     position: relative;
-    padding-bottom: 50px;
 }
 
 .header .dropdown-item {
@@ -1135,4 +1138,18 @@ textarea.materialize-textarea:focus:not([readonly]) {
     }
 }
 
-@media (max-width: 768px) {}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .timeline_content {
+        min-width: 180px;
+    }
+    .chart {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxs .tab-content {
+        margin: 20px 30px 0 15px;
+        position: relative;
+    }
+}
