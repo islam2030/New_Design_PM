@@ -2413,8 +2413,10 @@
         if (cap.haseventlistener) { // W3C standard event model
 
             // thanks to https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-            try { var options = Object.defineProperty({}, "passive", { get: function() { passiveSupported = !0; } });
-                _win.addEventListener("test", null, options); } catch (err) {}
+            try {
+                var options = Object.defineProperty({}, "passive", { get: function() { passiveSupported = !0; } });
+                _win.addEventListener("test", null, options);
+            } catch (err) {}
 
             this.stopPropagation = function(e) {
                 if (!e) return false;
@@ -2825,9 +2827,13 @@
                 if (chk) {
                     if (opt.nativeparentscrolling && chkscroll && !self.ispage && !self.zoomactive) return true;
                     var ny = self.view.h >> 1;
-                    if (self.newscrolly < -ny) { self.newscrolly = -ny;
-                        py = -1; } else if (self.newscrolly > self.page.maxh + ny) { self.newscrolly = self.page.maxh + ny;
-                        py = 1; } else py = 0;
+                    if (self.newscrolly < -ny) {
+                        self.newscrolly = -ny;
+                        py = -1;
+                    } else if (self.newscrolly > self.page.maxh + ny) {
+                        self.newscrolly = self.page.maxh + ny;
+                        py = 1;
+                    } else py = 0;
                 }
 
                 var dy = py > 0 ? 1 : -1;

@@ -46,6 +46,9 @@ $("#scroll").niceScroll({
     disablemutationobserver: false,
 });
 
+
+
+
 $("#scroll_left").niceScroll({
     cursorcolor: "rgba(0, 0, 0, 0.25)", // change cursor color in hex
     cursoropacitymin: 0.8, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
@@ -53,19 +56,19 @@ $("#scroll_left").niceScroll({
     cursorwidth: "4px", // cursor width in pixel (you can also write "5px")
     cursorborder: "1px solid rgba(0, 0, 0, 0.25)", // css definition for cursor border
     cursorborderradius: "10px", // border radius in pixel for cursor
-    zindex: "auto", // change z-index for scrollbar div
+    zindex: "9999", // change z-index for scrollbar div
     scrollspeed: 60, // scrolling speed
     mousescrollstep: 40, // scrolling speed with mouse wheel (pixel)
     touchbehavior: false, // enable cursor-drag scrolling like touch devices in desktop computer
     hwacceleration: true, // use hardware accelerated scroll when supported
     boxzoom: false, // enable zoom for box content
-    dblclickzoom: true, // (only when boxzoom=true) zoom activated when double click on box
-    gesturezoom: true, // (only when boxzoom=true and with touch devices) zoom activated when pinch out/in on box
+    dblclickzoom: false, // (only when boxzoom=true) zoom activated when double click on box
+    gesturezoom: false, // (only when boxzoom=true and with touch devices) zoom activated when pinch out/in on box
     grabcursorenabled: true, // (only when touchbehavior=true) display "grab" icon
-    autohidemode: true, // how hide the scrollbar works, possible values: 
+    autohidemode: false, // how hide the scrollbar works, possible values: 
     background: "", // change css for rail background
     iframeautoresize: true, // autoresize iframe on load event
-    cursorminheight: 20, // set the minimum cursor height (pixel)
+    cursorminheight: 32, // set the minimum cursor height (pixel)
     preservenativescrolling: true, // you can scroll native scrollable areas with mouse, bubbling mouse wheel event
     railoffset: false, // you can add offset top/left for rail position
     bouncescroll: false, // (only hw accell) enable scroll bouncing at the end of content as mobile-like 
