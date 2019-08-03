@@ -186,7 +186,7 @@
                         <div class="boxs box_postion">
                             <div class="boxs-head bg-blue">
                                 <h2>
-                                    <span class="icons_boxs"><i class="material-icons"> wrap_text</i></span> الأعمال الجارية
+                                    <span class="icons_boxs"><i class="material-icons"> folder_open</i></span> المجلدات
                                 </h2>
                                 <span class="pull-left counter_tasks">121</span>
                                 <div class="dropdown pull-left">
@@ -212,22 +212,22 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="form-group mb-0">
-                                                <input class="inputMaterial" type="text">
-                                                <label class="label">  وصف المهمة </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-
-                                            <div class="form-group mb-0">
                                                 <div class="input-field inputMaterial mt-0">
                                                     <select>
-                                                        <option value="" disabled selected> نوع المهمة  </option>
+                                                        <option value="" disabled selected> مستندات </option>
                                                         <option value="1">Option 1</option>
                                                         <option value="2">Option 2</option>
                                                         <option value="3">Option 3</option>
                                                     </select>
-                                                    <label class="select_lable"> نوع المهمة  </label>
+                                                    <label class="select_lable"> نوع الملفات </label>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group mb-0">
+                                                <input class="inputMaterial datepicker" id="" type="text">
+                                                <span class="datepicker"><i class="material-icons calender_icons">calendar_today</i></span>
+                                                <label class="label">  فتره الانشاء  </label>
 
                                             </div>
                                         </div>
@@ -243,110 +243,84 @@
                                         </div>
                                     </div>
                                 </form>
-                                <div class="content_tasks">
-                                    <div class="collapse_wrapper center-block" id="">
-                                        <div class="panel-group snj-panel" id="accordion" role="tablist" aria-multiselectable="true">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading" role="tab" id="heading1">
-                                                    <h4 class="panel-title">
-                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                            <span><i class="material-icons">graphic_eq</i></span> اجتماع بين شركة الإتصالات والمعلوماتي
-                                                            <p class="pull-left mb-0" data-toggle="collapse" href="#comments" aria-controls="comments">
-                                                                <i class="material-icons icons_tskas">comment</i>
-                                                                <span class="badge badge-danger">4</span>
-                                                            </p>
-                                                            <p class="pull-left mb-0" href="#">
-                                                                <i class="material-icons icons_tskas">folder_open</i>
-                                                            </p>
-                                                            <div class="pull-left mb-0 date"> 20 يونيو 2019 </div>
-                                                        </a>
-                                                        <div class="mb-0 date_task">
-                                                            <span class="date">السبت 22 مارس 2019</span>
-                                                            <span class="date"> الخميس 24 يناير 2020 </span>
-                                                            <div class="mb-0 text-left tasks_case"> مستمرة في العمل </div>
-                                                        </div>
-                                                    </h4>
-                                                </div>
-
-                                                <div id="collapse1" class="panel-collapse collapse collapse1 in" role="tabpanel" aria-labelledby="heading1">
-                                                    <div class="panel-body pt-0">
-                                                        ورشة عمل بين كلا من وزراتي العدل والاتصالات مع شركة الاتصالات العالمية بحضور شركة انجاز تم عرض ومناقشة التصميم الإنشائى والهندسى المطور لدائرة كاتب العدل. عرض ومناقشة صفحات النظام الآلى لأتمتة المعاملات وتسجيل ملاحظات السادة الحضور عليها. عرض الخطة التنفيذية
-                                                        العامة للمشروع. عرض تصور الشركة لإدارة المشروع بوجه عام واللجان المطلوب تكوينها لهذا الغرض. الاتفاق على إعداد ورشة عمل تخصصية بعد أسبوع لمناقشة ملاحظات السادة الحضور والوصول لاتفاق بشأنها.
+                                <div class="content_files">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6">
+                                            <a href="single-file.html">
+                                                <div class="files text-center">
+                                                    <div class="icon_file">
+                                                        <i class="material-icons">folder</i>
                                                     </div>
+                                                    <div class="file_name">زيارة ميدانية</div>
+                                                    <div class="file_type">مجلد</div>
                                                 </div>
-                                                <div class="progress progress_height progress_pos">
-                                                    <div class="progress-bar" role="progressbar" aria-valuenow="65%" aria-valuemin="0" aria-valuemax="100">
-                                                        <span>65%</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <a href="#">
+                                                <div class="files text-center">
+                                                    <div class="icon_file">
+                                                        <i class="material-icons">folder</i>
                                                     </div>
+                                                    <div class="file_name">زيارة ميدانية</div>
+                                                    <div class="file_type">مجلد</div>
                                                 </div>
-                                                <div id="comments" class="panel-collapse mr-3 ml-3 collapse in" role="tabpanel" aria-labelledby="heading1">
-                                                    <div class="panel-body panel_tasks">
-                                                        <form class="comments_form">
-                                                            <div class="form-group">
-                                                                <textarea type="text" class="inputMaterial_textarea" rows="3" placeholder="نص الادخال"></textarea>
-                                                                <label class="label label_gray"> أترك تعليقاً </label>
-                                                            </div>
-                                                            <div class="form-row">
-                                                                <div class="col-lg-6 offset-3">
-                                                                    <div class="form-row">
-                                                                        <div class="form-group col-md-6">
-                                                                            <button type="button" class="btn w-100 btn-border actions"> إلغاء </button>
-                                                                        </div>
-                                                                        <div class="form-group col-md-6">
-                                                                            <button type="button" class="btn w-100 btn-blue actions"> أضف تعليقاً </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                        <div class="dropdown-divider"></div>
-                                                        <div class="media main-comments">
-                                                            <img src="assets/img/user.jpeg" class="ml-3" alt="...">
-                                                            <div class="media-body">
-                                                                <h5 class="mt-0"> إبراهيم الوشاحي <span class="date mr-2"> منذ 15 دقيقة </span></h5>
-                                                                يرجى إرفاق محضر الإجتماع مع المهمة.
-                                                                <div class="commnets_actions">
-                                                                    <a href="#"> <i class="material-icons"> delete_outline</i> حذف</a>
-                                                                    <a href="#"> <i class="material-icons"> reply</i> ترك رد</a>
-                                                                </div>
-                                                                <!-- start replay comments code -->
-                                                                <div class="media mt-3 replay_comments">
-                                                                    <a class="mr-3" href="#">
-                                                                        <img src="assets/img/other_user.jpg" class="ml-3 " alt="...">
-                                                                    </a>
-                                                                    <div class="media-body">
-                                                                        <h5 class="mt-0">إبراهيم الوشاحي <span class="date mr-2"> منذ قليل </span></h5>
-                                                                        جاري تجهيزه وإرفاقه في أسرع وقت ممكن.
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End replay comments code -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="media main-comments">
-                                                            <img src="assets/img/user.jpeg" class="ml-3" alt="...">
-                                                            <div class="media-body">
-                                                                <h5 class="mt-0"> إبراهيم الوشاحي <span class="date mr-2"> منذ 15 دقيقة </span></h5>
-                                                                يرجى إرفاق محضر الإجتماع مع المهمة.
-                                                                <div class="commnets_actions">
-                                                                    <a href="#"> <i class="material-icons"> delete_outline</i> حذف</a>
-                                                                    <a data-toggle="collapse" href="#collapseExample"> <i class="material-icons"> reply</i> ترك رد</a>
-                                                                    <div id="collapseExample" class="replay_comments_field collapse">
-                                                                        <div class="form-row">
-                                                                            <div class="form-group mb-0 col-md-10">
-                                                                                <input type="text" class="inputMaterial">
-                                                                                <label class="label label_gray"> أترك تعليقاً </label>
-                                                                            </div>
-                                                                            <div class="form-group mb-0 col-md-2">
-                                                                                <button type="button" class="btn w-100 btn-blue actions"> أضف رداً </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <a href="#">
+                                                <div class="files text-center">
+                                                    <div class="icon_file">
+                                                        <i class="material-icons">folder</i>
                                                     </div>
+                                                    <div class="file_name">زيارة ميدانية</div>
+                                                    <div class="file_type">مجلد</div>
                                                 </div>
-                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <a href="#">
+                                                <div class="files text-center">
+                                                    <div class="icon_file">
+                                                        <i class="material-icons">folder</i>
+                                                    </div>
+                                                    <div class="file_name">زيارة ميدانية</div>
+                                                    <div class="file_type">مجلد</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <a href="#">
+                                                <div class="files text-center">
+                                                    <div class="icon_file">
+                                                        <i class="material-icons">folder</i>
+                                                    </div>
+                                                    <div class="file_name">زيارة ميدانية</div>
+                                                    <div class="file_type">مجلد</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <a href="#">
+                                                <div class="files text-center">
+                                                    <div class="icon_file">
+                                                        <i class="material-icons">folder</i>
+                                                    </div>
+                                                    <div class="file_name">زيارة ميدانية</div>
+                                                    <div class="file_type">مجلد</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <a href="#">
+                                                <div class="files text-center">
+                                                    <div class="icon_file">
+                                                        <i class="material-icons">folder</i>
+                                                    </div>
+                                                    <div class="file_name">زيارة ميدانية</div>
+                                                    <div class="file_type">مجلد</div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
