@@ -10,15 +10,18 @@
     <link rel="stylesheet" href="assets/css/material.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/fixedHeader.dataTables.min.css">
     <link rel="stylesheet" href="assets/css/responsive.dataTables.min.css">
-
+    <link rel="stylesheet" href="assets/css/datepicker.css">
     <link rel="stylesheet" href="assets/css/tiny-toggle.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
+
     <!-- start wrapper here -->
     <div class="wrapper wrapper-back-end">
         <!-- Start navbar -->
@@ -38,7 +41,8 @@
                             <span class="icon-red"></span>
                         </div>
                         <div class="dropdown d-flex h-100 design-button-header">
-                            <button class="btn text-left dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn text-left dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 أحمد العنزي
                                 <span class="d-block font-size-10 gray-header">مدير النظام</span>
                             </button>
@@ -61,16 +65,17 @@
                         <div class="row mb-0 h-100">
                             <div class="col-6">
                                 <h2>
-                                    <span class="icons_boxs"><i class="material-icons">people</i></span> قائمه المستخدمين
-                                </h2>                                    
+                                    <span class="icons_boxs"><i class="material-icons">people</i></span> قائمه
+                                    المستخدمين
+                                </h2>
                             </div>
                             <div class="col-6 icon-number-header-container">
-                                    <select class="selectpicker select-header">
-                                        <option>ترتيب حسب: تاريخ الإنشاء</option>
-                                        <option>Ketchup</option>
-                                        <option>Relish</option>
-                                    </select>
-                                          
+                                <select class="selectpicker select-header">
+                                    <option>ترتيب حسب: تاريخ الإنشاء</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+
                                 <span class="icon-number-header">164</span>
                             </div>
                         </div>
@@ -86,27 +91,37 @@
                                                     <div class="row">
                                                         <div class="col-3">
                                                             <div class="form-group m-0 w-100">
-                                                                <input type="text" class="inputMaterial design-next-label-36 w-100 design-input-pm" id="formGroupExampleInput1">
-                                                                <label class="label label-gray-field">إسم المستخدم</label>
+                                                                <input type="text"
+                                                                    class="inputMaterial field-search-user-name design-next-label-36 w-100 design-input-pm"
+                                                                    id="formGroupExampleInput1">
+                                                                <label class="label label-gray-field">إسم
+                                                                    المستخدم</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
                                                             <div class="form-group m-0 w-100">
-                                                                <input type="email" class="inputMaterial design-next-label-36 w-100 design-input-pm" id="formGroupExampleInput2">
-                                                                <label class="label label-gray-field">البريد الإلكتروني</label>
-                                                            </div>                                                    
+                                                                <input type="email"
+                                                                    class="inputMaterial field-search-email design-next-label-36 w-100 design-input-pm"
+                                                                    id="formGroupExampleInput2">
+                                                                <label class="label label-gray-field ">البريد
+                                                                    الإلكتروني</label>
+                                                            </div>
                                                         </div>
                                                         <div class="col-3">
                                                             <div class="form-group m-0 w-100">
-                                                                <input type="text" class="inputMaterial design-next-label-36 w-100 design-input-pm" id="formGroupExampleInput3">
-                                                                <label class="label label-gray-field">المسمى الوظيفي</label>
-                                                            </div>                                                          
+                                                                <input type="text"
+                                                                    class="inputMaterial field-search-job-title design-next-label-36 w-100 design-input-pm"
+                                                                    id="formGroupExampleInput3">
+                                                                <label class="label label-gray-field">المسمى
+                                                                    الوظيفي</label>
+                                                            </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <select class="selectpicker select-field-design w-100">
-                                                                <option>دور المستخدم</option>
-                                                                <option>Ketchup</option>
-                                                                <option>Relish</option>
+                                                            <select
+                                                                class="selectpicker select-search-User-role select-field-design w-100">
+                                                                <option value="">دور المستخدم</option>
+                                                                <option value="Ketchup">Ketchup</option>
+                                                                <option value="Relish">Relish</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -114,33 +129,43 @@
                                                 <div class="col-12">
                                                     <div class="row">
                                                         <div class="col-3">
-                                                            <select class="selectpicker select-field-design w-100">
-                                                                <option>حالة المستخدم</option>
-                                                                <option>Ketchup</option>
-                                                                <option>Relish</option>
+                                                            <select
+                                                                class="selectpicker select-search-user-status select-field-design w-100">
+                                                                <option value="">حالة المستخدم</option>
+                                                                <option value="Ketchup">Ketchup</option>
+                                                                <option value="Ketchup">Relish</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-3">
-                                                            <select class="selectpicker select-field-design w-100">
+                                                            <select
+                                                                class="selectpicker select-search-Facilities select-field-design w-100">
                                                                 <option>المنشآت</option>
                                                                 <option>Ketchup</option>
                                                                 <option>Relish</option>
-                                                            </select>                                                
+                                                            </select>
                                                         </div>
                                                         <div class="col-3">
-                                                            <select class="selectpicker select-field-design w-100">
+                                                            <select
+                                                                class="selectpicker select-search-Projects select-field-design w-100">
                                                                 <option>المشروعات</option>
                                                                 <option>Ketchup</option>
                                                                 <option>Relish</option>
-                                                            </select>                                                        
+                                                            </select>
                                                         </div>
                                                         <div class="col-3">
-                                                            <select class="selectpicker select-field-design w-100">
-                                                                <option>فترة إنضمام المستخدم</option>
-                                                                <option>Ketchup</option>
-                                                                <option>Relish</option>
-                                                            </select>
-                                                        </div>                                                        
+                                                            <div class="form-group p-0 design-datepicker-container col-12 position-relative select-field-design m-0">
+
+                                                   
+                                                                    <i class="material-icons">date_range</i>
+                                                                    <input type="text"
+                                                                        class="datepicker-here select-field-design form-control inputMaterial"
+                                                                        id="timepicker-actions-exmpl"
+                                                                        data-date-format="dd/mm/yyyy" data-language='en'
+                                                                        placeholder="تاريخ التعميم">
+                               
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
 
@@ -148,8 +173,11 @@
                                             </div>
                                         </div>
                                         <div class="col-2 buttons-List-of-projects">
-                                            <button class="btn col-12 button-background-white border-radius-8 m-b-15">اعاده تعيين</button>
-                                            <button class="btn col-12 button-background-blue border-radius-8">تطبيق</button>
+                                            <button
+                                                class="btn col-12 button-background-white border-radius-8 m-b-15">اعاده
+                                                تعيين</button>
+                                            <button
+                                                class="btn col-12 button-background-blue border-radius-8">تطبيق</button>
                                         </div>
                                     </div>
                                 </div>
@@ -165,353 +193,1396 @@
                                 <p class="m-0">يمكنك إختيار عدة صفوف واسنادها، تعديلها أو حذفها مرة واحدة.</p>
                             </div>
                             <div class="col-4 Add-a-functional-title-and-user">
-                                <button class="btn button-plus-white border-radius-8">إضافة مسمى وظيفي <i class="material-icons">add</i></button>
-                                <button class="btn button-plus-blue border-radius-8">إضافة مستخدم <i class="material-icons">add</i></button>
+                                <button class="btn button-plus-white border-radius-8">إضافة مسمى وظيفي <i
+                                        class="material-icons">add</i></button>
+                                <button class="btn button-plus-blue border-radius-8">إضافة مستخدم <i
+                                        class="material-icons">add</i></button>
                             </div>
                         </div>
                         <div class="table-container table-design-comtainer">
                             <table id="requestTable" class="table table_Circulars fixedHeader-2 tableFixHead">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th class="all"><input type="checkbox" class="tiny-toggle tiny-white" data-tt-type="square"></th>
-                                        <th> اسم المستخدم</th>
-                                        <th style="width: 8% !important"> البريد الإلكتروني</th>
-                                        <th style="width: 8% !important">الإسم الأول</th>
-                                        <th style="width: 8% !important">الإسم الأخير</th>
-                                        <th style="width: 8% !important">السن</th>
-                                        <th style="width: 8% !important">الدور</th>
-                                        <th style="width: 10% !important">المسمى الوظيفي</th>
-                                        <th style="width: 8% !important">المنشآت</th>
-                                        <th style="width: 8% !important">المشروعات</th>
-                                        <th style="width: 8% !important">الحالة</th>
-                                        <th>الإجراءات</th>
+                                        <th class="all th-1"><input type="checkbox" class="tiny-toggle tiny-white"
+                                                data-tt-type="square"></th>
+                                        <th class="th-2"> اسم المستخدم</th>
+                                        <th class="th-3"> البريد الإلكتروني</th>
+                                        <th class="th-4">الإسم الأول</th>
+                                        <th class="th-5">الإسم الأخير</th>
+                                        <th class="th-6">السن</th>
+                                        <th class="th-7">الدور</th>
+                                        <th class="th-8">المسمى الوظيفي</th>
+                                        <th class="th-9">المنشآت</th>
+                                        <th class="th-10">المشروعات</th>
+                                        <th class="th-11">الحالة</th>
+                                        <th class="all th-12">الإجراءات</th>
                                     </tr>
                                 </thead>
                                 <tbody class="tbody_bg scrollbar">
                                     <tr>
-                                        <td>checkout</td>
-                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing" />
+                                                <label for="thing">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">mostafa </td>
                                         <td>y.lotfy@unicomg.com</td>
-                                        <td><p>Yasser</p></td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
                                         <td>Lotfy</td>
                                         <td>29</td>
                                         <td>مدير نظام</td>
-                                        <td>مصمم برمجيات</td>
+                                        <td>مصمم</td>
                                         <td>2</td>
                                         <td>2</td>
-                                        <td>
+                                        <td class="td-blue">
                                             نشط
                                         </td>
-                                        <td>
-                                                say
-                                            </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="background-Bubbles">
-                                        <td>checkout</td>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing2" />
+                                                <label for="thing2">
+
+                                                </label>
+                                            </div>
+                                        </td>
                                         <td class="text-decoration-underline">yasserlotfy </td>
                                         <td>y.lotfy@unicomg.com</td>
-                                        <td>Yasser</td>
-                                        <td>Lotfy</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>mostafa</td>
                                         <td>29</td>
                                         <td>مدير نظام</td>
                                         <td>مصمم برمجيات</td>
                                         <td>2</td>
                                         <td>2</td>
-                                        <td>
+                                        <td class="td-blue">
                                             نشط
                                         </td>
-                                        <td>
-                                                say
-                                            </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="background-Bubbles">
-                                        <td>checkout</td>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing3" />
+                                                <label for="thing3">
+
+                                                </label>
+                                            </div>
+                                        </td>
                                         <td class="text-decoration-underline">yasserlotfy </td>
                                         <td>y.lotfy@unicomg.com</td>
-                                        <td>Yasser</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
                                         <td>Lotfy</td>
                                         <td>29</td>
                                         <td>مدير نظام</td>
                                         <td>مصمم برمجيات</td>
                                         <td>2</td>
                                         <td>2</td>
-                                        <td>
+                                        <td class="td-blue">
                                             نشط
                                         </td>
-                                        <td>
-                                                say
-                                            </td>
-                                    </tr>                                    
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
                                     <tr class="background-gray">
-                                        <td>checkout</td>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing4" />
+                                                <label for="thing4">
+
+                                                </label>
+                                            </div>
+                                        </td>
                                         <td class="text-decoration-underline">yasserlotfy </td>
                                         <td>y.lotfy@unicomg.com</td>
-                                        <td>Yasser</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
                                         <td>Lotfy</td>
                                         <td>29</td>
                                         <td>مدير نظام</td>
                                         <td>مصمم برمجيات</td>
                                         <td>2</td>
                                         <td>2</td>
-                                        <td>
+                                        <td class="td-blue">
                                             نشط
                                         </td>
-                                        <td>
-                                                say
-                                            </td>
-                                    </tr>    
-                                    <tr>
-                                        <td>checkout</td>
-                                        <td class="text-decoration-underline">yasserlotfy </td>
-                                        <td>y.lotfy@unicomg.com</td>
-                                        <td>Yasser</td>
-                                        <td>Lotfy</td>
-                                        <td>29</td>
-                                        <td>مدير نظام</td>
-                                        <td>مصمم برمجيات</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>
-                                            نشط
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
                                         </td>
-                                        <td>
-                                                say
-                                            </td>
-                                    </tr>    
-                                    <tr class="background-gray">
-                                        <td>checkout</td>
-                                        <td class="text-decoration-underline">yasserlotfy </td>
-                                        <td>y.lotfy@unicomg.com</td>
-                                        <td>Yasser</td>
-                                        <td>Lotfy</td>
-                                        <td>29</td>
-                                        <td>مدير نظام</td>
-                                        <td>مصمم برمجيات</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>
-                                            نشط
-                                        </td>
-                                        <td>
-                                                say
-                                            </td>
                                     </tr>
                                     <tr>
-                                            <td>checkout</td>
-                                            <td class="text-decoration-underline">yasserlotfy </td>
-                                            <td>y.lotfy@unicomg.com</td>
-                                            <td>Yasser</td>
-                                            <td>Lotfy</td>
-                                            <td>29</td>
-                                            <td>مدير نظام</td>
-                                            <td>مصمم برمجيات</td>
-                                            <td>2</td>
-                                            <td>2</td>
-                                            <td>
-                                                نشط
-                                            </td>
-                                            <td>
-                                                    say
-                                                </td>
-                                        </tr>
-                                        <tr class="background-Bubbles">
-                                            <td>checkout</td>
-                                            <td class="text-decoration-underline">yasserlotfy </td>
-                                            <td>y.lotfy@unicomg.com</td>
-                                            <td>Yasser</td>
-                                            <td>Lotfy</td>
-                                            <td>29</td>
-                                            <td>مدير نظام</td>
-                                            <td>مصمم برمجيات</td>
-                                            <td>2</td>
-                                            <td>2</td>
-                                            <td>
-                                                نشط
-                                            </td>
-                                            <td>
-                                                    say
-                                                </td>
-                                        </tr>
-                                        <tr class="background-Bubbles">
-                                            <td>checkout</td>
-                                            <td class="text-decoration-underline">yasserlotfy </td>
-                                            <td>y.lotfy@unicomg.com</td>
-                                            <td>Yasser</td>
-                                            <td>Lotfy</td>
-                                            <td>29</td>
-                                            <td>مدير نظام</td>
-                                            <td>مصمم برمجيات</td>
-                                            <td>2</td>
-                                            <td>2</td>
-                                            <td>
-                                                نشط
-                                            </td>
-                                            <td>
-                                                    say
-                                                </td>
-                                        </tr>                                    
-                                        <tr class="background-gray">
-                                            <td>checkout</td>
-                                            <td class="text-decoration-underline">yasserlotfy </td>
-                                            <td>y.lotfy@unicomg.com</td>
-                                            <td>Yasser</td>
-                                            <td>Lotfy</td>
-                                            <td>29</td>
-                                            <td>مدير نظام</td>
-                                            <td>مصمم برمجيات</td>
-                                            <td>2</td>
-                                            <td>2</td>
-                                            <td>
-                                                نشط
-                                            </td>
-                                            <td>
-                                                    say
-                                                </td>
-                                        </tr>    
-                                        <tr>
-                                            <td>checkout</td>
-                                            <td class="text-decoration-underline">yasserlotfy </td>
-                                            <td>y.lotfy@unicomg.com</td>
-                                            <td>Yasser</td>
-                                            <td>Lotfy</td>
-                                            <td>29</td>
-                                            <td>مدير نظام</td>
-                                            <td>مصمم برمجيات</td>
-                                            <td>2</td>
-                                            <td>2</td>
-                                            <td>
-                                                نشط
-                                            </td>
-                                            <td>
-                                                    say
-                                                </td>
-                                        </tr>    
-                                        <tr class="background-gray">
-                                            <td>checkout</td>
-                                            <td class="text-decoration-underline">yasserlotfy </td>
-                                            <td>y.lotfy@unicomg.com</td>
-                                            <td>Yasser</td>
-                                            <td>Lotfy</td>
-                                            <td>29</td>
-                                            <td>مدير نظام</td>
-                                            <td>مصمم برمجيات</td>
-                                            <td>2</td>
-                                            <td>2</td>
-                                            <td>
-                                                نشط
-                                            </td>
-                                            <td>
-                                                    say
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                                <td>checkout</td>
-                                                <td class="text-decoration-underline">yasserlotfy </td>
-                                                <td>y.lotfy@unicomg.com</td>
-                                                <td>Yasser</td>
-                                                <td>Lotfy</td>
-                                                <td>29</td>
-                                                <td>مدير نظام</td>
-                                                <td>مصمم برمجيات</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>
-                                                    نشط
-                                                </td>
-                                                <td>
-                                                        say
-                                                    </td>
-                                            </tr>
-                                            <tr class="background-Bubbles">
-                                                <td>checkout</td>
-                                                <td class="text-decoration-underline">yasserlotfy </td>
-                                                <td>y.lotfy@unicomg.com</td>
-                                                <td>Yasser</td>
-                                                <td>Lotfy</td>
-                                                <td>29</td>
-                                                <td>مدير نظام</td>
-                                                <td>مصمم برمجيات</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>
-                                                    نشط
-                                                </td>
-                                                <td>
-                                                        say
-                                                    </td>
-                                            </tr>
-                                            <tr class="background-Bubbles">
-                                                <td>checkout</td>
-                                                <td class="text-decoration-underline">yasserlotfy </td>
-                                                <td>y.lotfy@unicomg.com</td>
-                                                <td>Yasser</td>
-                                                <td>Lotfy</td>
-                                                <td>29</td>
-                                                <td>مدير نظام</td>
-                                                <td>مصمم برمجيات</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>
-                                                    نشط
-                                                </td>
-                                                <td>
-                                                        say
-                                                    </td>
-                                            </tr>                                    
-                                            <tr class="background-gray">
-                                                <td>checkout</td>
-                                                <td class="text-decoration-underline">yasserlotfy </td>
-                                                <td>y.lotfy@unicomg.com</td>
-                                                <td>Yasser</td>
-                                                <td>Lotfy</td>
-                                                <td>29</td>
-                                                <td>مدير نظام</td>
-                                                <td>مصمم برمجيات</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>
-                                                    نشط
-                                                </td>
-                                                <td>
-                                                        say
-                                                    </td>
-                                            </tr>    
-                                            <tr>
-                                                <td>checkout</td>
-                                                <td class="text-decoration-underline">yasserlotfy </td>
-                                                <td>y.lotfy@unicomg.com</td>
-                                                <td>Yasser</td>
-                                                <td>Lotfy</td>
-                                                <td>29</td>
-                                                <td>مدير نظام</td>
-                                                <td>مصمم برمجيات</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>
-                                                    نشط
-                                                </td>
-                                                <td>
-                                                        say
-                                                    </td>
-                                            </tr>    
-                                            <tr class="background-gray">
-                                                <td>checkout</td>
-                                                <td class="text-decoration-underline">yasserlotfy </td>
-                                                <td>y.lotfy@unicomg.com</td>
-                                                <td>Yasser</td>
-                                                <td>Lotfy</td>
-                                                <td>29</td>
-                                                <td>مدير نظام</td>
-                                                <td>مصمم برمجيات</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>
-                                                    نشط
-                                                </td>
-                                                <td>
-                                                        say
-                                                    </td>
-                                            </tr>                                                                            
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing5" />
+                                                <label for="thing5">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing6" />
+                                                <label for="thing6">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing7" />
+                                                <label for="thing7">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing/" />
+                                                <label for="thing8">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing9" />
+                                                <label for="thing9">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing10" />
+                                                <label for="thing10">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing11" />
+                                                <label for="thing11">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing12" />
+                                                <label for="thing12">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing13" />
+                                                <label for="thing13">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing14" />
+                                                <label for="thing14">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing15" />
+                                                <label for="thing15">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing16" />
+                                                <label for="thing16">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing17" />
+                                                <label for="thing17">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing18" />
+                                                <label for="thing18">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing19" />
+                                                <label for="thing19">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing20" />
+                                                <label for="thing20">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing21" />
+                                                <label for="thing21">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing22" />
+                                                <label for="thing22">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing23" />
+                                                <label for="thing23">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing24" />
+                                                <label for="thing24">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing25" />
+                                                <label for="thing25">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing26" />
+                                                <label for="thing26">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing27" />
+                                                <label for="thing27">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing28" />
+                                                <label for="thing28">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing29" />
+                                                <label for="thing29">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing" />
+                                                <label for="thing">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-Bubbles">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing" />
+                                                <label for="thing">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing" />
+                                                <label for="thing">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing" />
+                                                <label for="thing">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="background-gray">
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing" />
+                                                <label for="thing">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bgholder">
+                                                <img src="http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200"
+                                                    class="img-bgholder" alt="chunkadamonk201" />
+                                                <input type='checkbox' name='thing' value='valuable' id="thing" />
+                                                <label for="thing">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="text-decoration-underline">yasserlotfy </td>
+                                        <td>y.lotfy@unicomg.com</td>
+                                        <td>
+                                            <p>Yasser</p>
+                                        </td>
+                                        <td>Lotfy</td>
+                                        <td>29</td>
+                                        <td>مدير نظام</td>
+                                        <td>مصمم برمجيات</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td class="td-blue">
+                                            نشط
+                                        </td>
+                                        <td class="Procedures-td">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <a href="#" class="col-4 visibility p-0 text-center" alt=""><i
+                                                            class="material-icons">visibility</i></a>
+                                                    <a href="#" class="col-4 edit p-0 text-center" alt=""><i
+                                                            class="material-icons">edit</i></a>
+                                                    <button type="button" data-toggle="modal" data-target="#modelDelete"
+                                                        class="btn col-4 delete p-0 text-center"><i
+                                                            class="material-icons">delete_forever</i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -531,7 +1602,7 @@
                     <li>
                         <div class="link-list">
                             <a href="#" class="d-block text-right">
-                                
+
                                 <i class="material-icons">bar_chart</i>
                                 <span>اللوحة الرئيسية</span>
                                 <i class="material-icons img-arrow">keyboard_arrow_left </i>
@@ -546,7 +1617,7 @@
                                 <i class="material-icons img-arrow">keyboard_arrow_left </i>
                             </a>
                         </div>
-                    </li>         
+                    </li>
                     <li>
                         <div class="link-list">
                             <a href="#" class="d-block text-right">
@@ -555,7 +1626,7 @@
                                 <i class="material-icons img-arrow">keyboard_arrow_left </i>
                             </a>
                         </div>
-                    </li>      
+                    </li>
                     <li>
                         <div class="link-list">
                             <a href="#" class="d-block text-right">
@@ -564,7 +1635,7 @@
                                 <i class="material-icons img-arrow">keyboard_arrow_left </i>
                             </a>
                         </div>
-                    </li>     
+                    </li>
                     <li>
                         <div class="link-list">
                             <a href="#" class="d-block text-right">
@@ -573,7 +1644,7 @@
                                 <i class="material-icons img-arrow">keyboard_arrow_left </i>
                             </a>
                         </div>
-                    </li>   
+                    </li>
                     <li>
                         <div class="link-list">
                             <a href="#" class="d-block text-right">
@@ -591,7 +1662,7 @@
                                 <i class="material-icons img-arrow">keyboard_arrow_left </i>
                             </a>
                         </div>
-                    </li>                    
+                    </li>
                 </ul>
             </div>
         </div>
@@ -611,6 +1682,27 @@
             </div>
         </div>
     </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modelDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End Footer -->
     <script src="assets/js/jquery-3.4.1.js"></script>
     <script src="assets/js/popper.js"></script>
@@ -623,6 +1715,8 @@
     <script src="assets/js/dataTables.responsive.js"></script>
     <script src="assets/js/dataTables.fixedHeader.min.js"></script>
     <script src="assets/js/tiny-toggle.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/datepicker.en.min.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 

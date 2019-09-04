@@ -29,6 +29,7 @@
     html {
         height: 100%;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
     
     body {
@@ -52,6 +53,9 @@
     *:after {
         box-sizing: inherit;
     }
+    .table:not(.fixedHeader-floating) {
+        width: 100% !important;
+    }
     /*-------------------------- Start WireFrames --------------------------*/
     .font-size-10 {
         font-size: 10px
@@ -69,7 +73,7 @@
         -ms-border-radius: 8px !important;
         -o-border-radius: 8px !important;
 }
-    
+
     .select-field-design .dropdown-toggle {
         height: 41px;
         background-color: white !important;
@@ -95,15 +99,16 @@
         padding-right: 10px !important;
     }
     .select-design-Procedures {
-        border: 1px solid rgba(0, 0, 0, 0.32) !important;
+       
         border-radius: 4px !important    ;
         -webkit-border-radius: 4px !important    ;
         -moz-border-radius: 4px !important    ;
         -ms-border-radius: 4px !important    ;
         -o-border-radius: 4px !important    ;
         width: 150px !important;
-}
+    }   
     .select-design-Procedures button {
+        
         border: 0 !important;
         color:rgba(0, 0, 0, 0.6) !important;
         outline: 0 !important;
@@ -114,19 +119,26 @@
         -moz-border-radius: 4px !important    ;
         -ms-border-radius: 4px !important    ;
         -o-border-radius: 4px !important    ;
+        border: 1px solid rgba(0, 0, 0, 0.32) !important;
     }
     .table .thead-dark th {
         color: #fff;
         background-color: #383838;
         border: 0 !important;
-        
+    }
+    .table:not(.fixedHeader-floating) .thead-dark th {
+        width: auto !important;
     }
     .table .thead-dark th {
         text-align: right;
     }
     .table .tbody_bg td {
         text-align: right;
-        border: 0
+        border: 0;
+        padding-bottom: 0 !important
+    }
+    .table .tbody_bg .td-blue {
+        color: rgba(1, 84, 149, 1);
     }
     .tiny-white + span i{
         color: white
@@ -143,8 +155,35 @@
      .space-botttom {
         padding-bottom: 70px;
      }
+     .design-datepicker-container i {
+         position: absolute;
+         top: 50%;
+         left: 15px;
+         transform: translateY(-50%)     ;
+         -webkit-transform: translateY(-50%)     ;
+         -moz-transform: translateY(-50%)     ;
+         -ms-transform: translateY(-50%)     ;
+         -o-transform: translateY(-50%)     ;
+         color: rgba(0, 0, 0, 0.6) !important;
+}
+    .design-datepicker-container input::placeholder {
+        font-size: 16px;
+    }
+    .datepickers-container {
+        direction: ltr
+    }
     /*-------------------------- End WireFrames --------------------------*/
     /*-------------------------- Start Datatable --------------------------*/
+    table.dataTable>tbody>tr.child span.dtr-title {
+        min-width: auto !important;
+    }
+    .boxs .boxs-body p {
+        display: inline-block !important;
+        margin: 0 !important;
+    }
+    .fixedHeader-floating {
+        z-index: 999;
+    }
     .dataTables_length {
         bottom: 10px;
         left: 140px;
@@ -227,6 +266,22 @@
         position: relative;
         padding-bottom: 19px;
      }
+     .Procedures-td button {
+        background-color: transparent
+     }
+     .Procedures-td button,
+     .Procedures-td a {
+        line-height: 5px;
+        padding-top: 0;
+        padding-bottom: 0;
+     }
+     .Procedures-td .delete i {
+         color: rgba(193, 39, 45, 1);
+     }
+     .Procedures-td .edit i,
+     .Procedures-td .visibility i {
+        color: rgba(1, 84, 149, 1)
+     }
 
     /*-------------------------- End Datatable --------------------------*/
     .datepicker-calendar-container {
@@ -267,6 +322,7 @@
     ol,
     ul {
         margin: 0;
+        list-style-type: none;
     }
     
     .offset-3 {
@@ -339,6 +395,7 @@
     .modal {
         bottom: auto;
         background: none;
+        height: 100vh;
     }
     
     a:hover {
@@ -537,7 +594,9 @@
         height: 55px !important;
         line-height: 55px;
     }
-    
+    .select-field-design {
+        height: 41px !important;
+    }
     .inputMaterial_textarea {
         height: auto !important;
         border-radius: 4px;
@@ -583,7 +642,8 @@
         /* width: 255px !important; */
     }
     
-    .inputMaterial:focus + label {
+    .inputMaterial:focus + label,
+    .inputMaterial.valid + label {
         top: -8px !important;
         color: rgba(0, 0, 0, 0.6);
         background: #fff;
@@ -822,8 +882,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 999;
         background-color: white;
+        z-index: 99;
     }
     .box-shadow-like-navbar {
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
@@ -953,7 +1013,7 @@
         font-size: 14px;
         color: rgba(56, 56, 56, 1);
         text-align: right;
-        line-height: 24px;
+        line-height: 19px !important;
     }
     .icon-number-header {
         height: 24px;
@@ -1068,14 +1128,90 @@
     .Add-a-functional-title-and-user > button:first-of-type {
         margin-left: 8px
     }
+    .Procedures {
+        align-items: center
+    }
     .Procedures > p {
         line-height: 41px !important;
         padding-right: 10px;
     }
     /*-------------- End boxs -----------------*/
+    /*-------------- Start checkbox image --------------*/
+    input[type=checkbox] {
+        display:none;
+    }
+    
+    .bgholder{
+        overflow: hidden;
+        background: url(http://rs583.pbsrc.com/albums/ss275/chunkadamonk201/2526091504_ebc0071e54.jpg~c200) no-repeat;
+        height: 32px;
+        width: 32px;
+        background-size: cover;
+        position: relative;
+        margin: 0 !important;
+        border-radius: 50%;
+        cursor: pointer;
+    
+    }
+    .bgholder .img-bgholder {
+        width: 100%;
+    }
+    .bgholder input[type=checkbox] + label
+    {
+        background-size: 50%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display:inline-block;
+        margin: 0;
+        z-index: 9;
+        cursor: pointer;
+    }
+    .bgholder input[type=checkbox]:checked + label
+    {
+        
+        background: url("../img/icon_action_done_24px-3x.png");
+        background-size: 100%;
+        display:inline-block;
+        background-color: rgba(0, 0, 0, .4)
+    }
+
+    /*-------------- End checkbox image --------------*/
     /*-------------- End body_content -----------------*/ 
     /*-------------- Start responsive --------------*/
+    @media (max-width: 1450px) {
 
-    @media (max-width: 768px) {}
+    }
+    @media (max-width: 1400px) {
+        .Add-a-functional-title-and-user button {
+            width: 100%;
+        }
+        .Add-a-functional-title-and-user .button-plus-white  {
+            margin-bottom: 10px !important
+        }
+        .Procedures {
+            align-items: center;
+        }
+    }
+    @media (max-width: 1365px) {
+        .table .thead-dark tr .th-1,
+        .table .thead-dark tr .th-2,
+        .table .thead-dark tr .th-3,
+        .table .thead-dark tr .th-4,
+        .table .thead-dark tr .th-12 {
+            width: 20% !important
+        }
+    }
+
+    @media (min-width: 1365px) {
+        .table .thead-dark tr .th-12 {
+            width: 10% !important
+        }
+        .table .thead-dark tr .th-3 {
+            width: 10% !important
+        }
+    }
     @media (min-width: 768px) {}    
     /*-------------- Start responsive --------------*/
