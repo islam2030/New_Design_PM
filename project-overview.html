@@ -206,7 +206,7 @@
                                     <h2>
                                         <span class="icons_boxs"><i class="material-icons"> wrap_text</i></span> الأعمال الجارية
                                         <span class="pull-left icons mt-1"><i class="material-icons"> keyboard_arrow_left</i></span></span>
-                                        <span class="pull-left counter">121</span>
+                                        <span class="pull-left counter_circel">121</span>
                                     </h2>
                                 </div>
                             </a>
@@ -322,7 +322,7 @@
                                     <h2>
                                         <span class="icons_boxs"><i class="material-icons"> ballot</i></span> الإجراءات
                                         <span class="pull-left icons mt-1"><i class="material-icons"> keyboard_arrow_left</i></span></span>
-                                        <span class="pull-left counter">121</span>
+                                        <span class="pull-left counter_circel">121</span>
                                     </h2>
                                 </div>
                             </a>
@@ -402,7 +402,7 @@
                                     <h2>
                                         <span class="icons_boxs"><i class="material-icons"> ballot</i></span> الإجراءات
                                         <span class="pull-left icons mt-1"><i class="material-icons"> keyboard_arrow_left</i></span></span>
-                                        <span class="pull-left counter">121</span>
+                                        <span class="pull-left counter_circel">121</span>
                                     </h2>
                                 </div>
                             </a>
@@ -508,8 +508,261 @@
                     </div>
 
                 </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="boxs box_postion">
+
+                            <div class="boxs-head bg-blue rounded-0">
+                                <h2>
+                                    <span class="icons_boxs"><i class="material-icons"> storage</i></span> خطة المشروع
+                                    <span class="pull-left icons mt-1"><i class="material-icons"> keyboard_arrow_left</i></span></span>
+                                    <span class="pull-left counter_circel datepicker_pos">
+                                        <div class="form-group mb-0">
+                                                <input type="text" class="datepicker inputMaterial" value="21/2/2019">
+                                                <span class="datepicker"><i class="material-icons calender_icons">calendar_today</i></span>
+                            </div>
+                            </span>
+                            </h2>
+                        </div>
+
+
+                        <div class="boxs-body">
+                            <!-- <div id="chartdiv"></div> -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="list_cat">
+                                        <ul>
+                                            <li> <span class="green"></span> تم إنجازه</li>
+                                            <li> <span class="red"></span> متأخر </li>
+                                            <li> <span class="light_blue"></span> بدأ </li>
+                                            <li> <span class="blue"></span> مستمرة في العمل </li>
+                                            <li> <span class="orange"></span> قيد الإنتظار </li>
+                                        </ul>
+                                    </div>
+                                    <div class="chart_custom" id="chart_custom">
+                                        <ul>
+                                            <li>
+                                                <span class="cat"> أخرى </span>
+                                                <span class="bg">
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar bg-transparent" role="progressbar" aria-valuenow="10%" aria-valuemin="0" aria-valuemax="100">
+                                                                
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow="60%" aria-valuemin="0" aria-valuemax="60">
+                                                                <!-- <div class="tooltips_from tooltips_postion">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="content_tooltip">
+                                                                                <div class=" num_day"> 01 </div>
+                                                                                <div class="">
+                                                                                    <div class="d-block month"> الإثنين </div>
+                                                                                    <div class="years"> يوليو 2019 </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar blue" role="progressbar" aria-valuenow="10%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips_from tooltips_postion">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="content_tooltip">
+                                                                                <div class=" num_day"> 01 </div>
+                                                                                <div class="">
+                                                                                    <div class="d-block month"> الإثنين </div>
+                                                                                    <div class="years"> يوليو 2019 </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar orange" role="progressbar" aria-valuenow="2%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips_from_to tooltips_postion">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="content_tooltip">
+                                                                                    <div class=" num_day"> 01 </div>
+                                                                                    <div class="">
+                                                                                        <div class="d-block month"> الإثنين </div>
+                                                                                        <div class="years"> يوليو 2019 </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="content_tooltip">
+                                                                                    <div class=" num_day"> 01 </div>
+                                                                                    <div class="">
+                                                                                        <div class="d-block month"> الإثنين </div>
+                                                                                        <div class="years"> يوليو 2019 </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </li>
+                                                                            
+                                                                    </ul>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar blue" role="progressbar" aria-valuenow="30%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar bg-transparent" role="progressbar" aria-valuenow="3%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow=".5%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                            <div class="bar progress-bar orange" role="progressbar" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar blue" role="progressbar" aria-valuenow="30%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="cat"> أعمال إنشائية </span>
+                                                <span class="bg"></span>
+                                            </li>
+                                            <li>
+                                                <span class="cat"> برمجيات </span>
+                                                <span class="bg">
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar bg-transparent" role="progressbar" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar orange" role="progressbar" aria-valuenow="2%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="30%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar orange" role="progressbar" aria-valuenow="10%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="10%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar bg-transparent" role="progressbar" aria-valuenow="10%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar orange" role="progressbar" aria-valuenow="5%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                            <div class="bar progress-bar light_blue" role="progressbar" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="10%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar bg-transparent" role="progressbar" aria-valuenow="60%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow="5%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                            <div class="bar progress-bar blue" role="progressbar" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="3%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar bg-transparent" role="progressbar" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow="5%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                            <div class="bar progress-bar blue" role="progressbar" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="3%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progressBar">
+                                                        <div class="progress">
+                                                            <div class="bar progress-bar bg-transparent" role="progressbar" aria-valuenow="10%" aria-valuemin="0" aria-valuemax="100">
+                                                                <!-- <div class="tooltips"> 10 </div> -->
+                                                            </div>
+                                                            <div class="bar progress-bar red" role="progressbar" aria-valuenow="5%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                            <div class="bar progress-bar blue" role="progressbar" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="60">
+                                                            </div>
+                                                            <div class="bar progress-bar green" role="progressbar" aria-valuenow="3%" aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="cat"> هاردوير </span>
+                                                <span class="bg last_border"></span>
+                                            </li>
+                                        </ul>
+                                        <div class="number_day">
+                                            <ul>
+                                                <li>01</li>
+                                                <li>02</li>
+                                                <li>03</li>
+                                                <li>04</li>
+                                                <li>05</li>
+                                                <li>06</li>
+                                                <li>07</li>
+                                                <li>08</li>
+                                                <li>09</li>
+                                                <li>10</li>
+                                                <li>11</li>
+                                                <li>12</li>
+                                                <li>01</li>
+                                                <li>02</li>
+                                                <li>03</li>
+                                                <li>04</li>
+                                                <li>05</li>
+                                                <li>06</li>
+                                                <li>07</li>
+                                                <li>08</li>
+                                                <li>09</li>
+                                                <li>10</li>
+                                                <li>11</li>
+                                                <li>12</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- start footer here -->
@@ -533,6 +786,10 @@
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/nicescroll.js"></script>
     <script src="assets/js/scroll.js"></script>
+    <!-- <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="https://www.amcharts.com/lib/3/gantt.js"></script> -->
     <script src="assets/js/custom.js"></script>
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
@@ -577,7 +834,7 @@
                 scales: {
                     yAxes: [{
                         position: 'right',
-                        stacked: true,
+                        stacked: false,
                         pointRadius: 0,
                         display: true,
                         ticks: {
@@ -680,4 +937,4 @@
     </script>
 </body>
 
-</html
+</html>

@@ -1565,7 +1565,7 @@ nav {
     background: rgba(247, 181, 0, 1) !important;
 }
 
-.counter {
+.counter_circel {
     background: #fff;
     padding: 0 10px;
     border-radius: 20px;
@@ -1580,7 +1580,7 @@ nav {
 
 .boxs-head .icons {
     position: relative;
-    top: 5px;
+    top: 3px;
     margin-right: 20px;
     color: #a7a7a7;
 }
@@ -1620,6 +1620,13 @@ nav {
 
 .filter_tasks {
     line-height: 0;
+}
+
+.files_folder {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    width: 50px;
 }
 
 .model_overview {
@@ -1717,6 +1724,7 @@ button:focus,
     text-align: left;
     line-height: 24px;
     margin-top: 12px;
+    margin-left: 30px;
 }
 
 .content_tasks .panel-body {
@@ -1925,6 +1933,309 @@ button:focus,
     position: relative;
     vertical-align: sub;
 }
+
+.datepicker_pos {
+    top: -3px;
+}
+
+.datepicker_pos .inputMaterial {
+    border: 0 !important;
+    cursor: pointer;
+}
+
+.chart_custom {
+    position: relative;
+}
+
+.chart_custom li {
+    position: relative;
+    text-align: right;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chart_custom li .cat {
+    position: relative;
+    z-index: 2;
+    min-width: 6%;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    color: rgba(176, 186, 201, 1);
+    text-align: left;
+    line-height: 20px;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+
+.chart_custom li .bg {
+    width: 94%;
+    position: relative;
+    z-index: auto;
+    padding: 5px 0;
+    border-top: 1px dashed rgba(230, 244, 255, 1);
+    border-right: 1px solid rgba(230, 244, 255, 1);
+    border-left: 1px dashed rgba(176, 186, 201, 0.5);
+}
+
+.chart_custom li:nth-of-type(odd) .bg {
+    background: #fff;
+}
+
+.chart_custom li:nth-of-type(even) .bg {
+    background: rgba(230, 244, 255, 1);
+}
+
+.last_border {
+    border-bottom: 1px dashed rgba(176, 186, 201, 0.5);
+}
+
+.number_day {
+    width: 94%;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+.number_day ul {
+    text-align: -webkit-center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number_day ul li {
+    display: inline-grid;
+    /* padding: 5px 1%; */
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(176, 186, 201, 1);
+    font-weight: 100;
+    display: block;
+}
+
+.number_day ul li:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    bottom: 0;
+    right: 0;
+    border-right: 1px dashed rgba(176, 186, 201, 0.5);
+}
+
+.number_day ul li:last-child:after {
+    border: 0;
+}
+
+.list_cat {
+    margin-bottom: 20px;
+}
+
+.list_cat li {
+    display: inline-block;
+    margin: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: rgba(135, 152, 173, 1);
+    text-align: right;
+    line-height: 22px;
+}
+
+.list_cat li span {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.progressBar {
+    position: relative;
+    z-index: auto;
+    margin: 8px 0;
+}
+
+.progressBar .progress {
+    bottom: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    margin: 0;
+    height: 2px;
+    background: transparent;
+}
+
+.progressBar:hover .progress {
+    background: #e9ecef
+}
+
+.progressBar .progress:hover .progress-bar .tooltips_from_to {
+    position: absolute;
+    right: -10px;
+    background: #000;
+    z-index: 9999;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    min-width: 225px;
+}
+
+.progressBar .progress:hover .progress-bar .tooltips_from_to:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 3px;
+    border-top: solid 6px rgb(0, 0, 0);
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
+    bottom: -5px;
+    right: 5px;
+}
+
+.progressBar .progress:hover .progress-bar .tooltips_from {
+    position: absolute;
+    bottom: 12px;
+    right: -10px;
+    background: #000;
+    z-index: 9999;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    min-width: 120px;
+}
+
+.progressBar .progress:hover .progress-bar .tooltips_from:after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 3px;
+    border-top: solid 6px rgb(0, 0, 0);
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
+    bottom: -5px;
+    right: 5px;
+}
+
+.content_tooltip {
+    display: flex;
+    flex-direction: row;
+}
+
+.tooltips_from_to ul li,
+.tooltips_from ul li {
+    padding: 0 10px;
+    min-height: auto;
+    display: inline-block;
+}
+
+.tooltips_from_to ul li .num_day,
+.tooltips_from ul li .num_day {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: 28px;
+    float: right;
+    margin-left: 10px;
+}
+
+.tooltips_from_to ul li .month,
+.tooltips_from ul li .month {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    line-height: 14px;
+    width: 100%;
+}
+
+.tooltips_from_to ul li .years,
+.tooltips_from ul li .years {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    line-height: 14px;
+    width: 100%;
+    display: block;
+}
+
+.progressBar .progress .progress-bar {
+    position: relative;
+}
+
+.progressBar .progress .progress-bar::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    right: -5px;
+    border: 1px solid #fff;
+    box-sizing: content-box;
+}
+
+.progressBar .progress .progress-bar::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 16px;
+    right: -8px;
+    background: #fff;
+    display: block;
+    border-radius: 5px;
+}
+
+.progressBar .progress .progress-bar.green::after {
+    background-color: rgba(58, 114, 0, 1) !important
+}
+
+.green {
+    background-color: rgba(58, 114, 0, 1) !important
+}
+
+.progressBar .progress .progress-bar.red::after {
+    background-color: rgba(193, 39, 45, 1) !important
+}
+
+.red {
+    background-color: rgba(193, 39, 45, 1) !important
+}
+
+.progressBar .progress .progress-bar.orange::after {
+    background-color: rgba(247, 181, 0, 1) !important
+}
+
+.orange {
+    background-color: rgba(247, 181, 0, 1) !important
+}
+
+.progressBar .progress .progress-bar.light_blue::after {
+    background-color: rgba(187, 225, 255, 1) !important
+}
+
+.light_blue {
+    background-color: rgba(187, 225, 255, 1) !important
+}
+
+.progressBar .progress .progress-bar.blue::after {
+    background-color: rgba(1, 84, 149, 1) !important
+}
+
+.blue {
+    background-color: rgba(1, 84, 149, 1) !important
+}
+
+
+/* #chartdiv {
+    width: 100%;
+    height: 500px;
+} */
 
 
 /* ----------- Non-Retina Screens ----------- */
