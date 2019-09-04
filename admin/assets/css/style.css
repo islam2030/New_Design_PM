@@ -128,7 +128,155 @@
         -ms-border-radius: 4px !important;
         -o-border-radius: 4px !important;
     }
+    
+    .table .thead-dark th {
+        color: #fff;
+        background-color: #383838;
+        border: 0 !important;
+    }
+    
+    .table .thead-dark th {
+        text-align: right;
+    }
+    
+    .table .tbody_bg td {
+        text-align: right;
+        border: 0
+    }
+    
+    .tiny-white+span i {
+        color: white
+    }
+    
+    .text-decoration-underline {
+        text-decoration: underline;
+    }
+    
+    .background-Bubbles {
+        background-color: rgba(230, 244, 255, 1) !important
+    }
+    
+    .background-gray {
+        background-color: rgba(0, 0, 0, 0.04) !important
+    }
+    
+    .space-botttom {
+        padding-bottom: 70px;
+    }
     /*-------------------------- End WireFrames --------------------------*/
+    /*-------------------------- Start Datatable --------------------------*/
+    
+    .dataTables_length {
+        bottom: 10px;
+        left: 140px;
+        z-index: 99;
+    }
+    
+    .table-design-comtainer .dataTables_wrapper .fg-toolbar .dataTables_length {
+        position: absolute;
+        bottom: 10px;
+        left: 112px;
+    }
+    
+    .dataTables_wrapper .ui-toolbar {
+        padding: 0 !important;
+    }
+    
+    .fg-toolbar {
+        background-color: white !important;
+        border: 0 !important;
+    }
+    
+    .dataTables_length label {
+        width: 157px;
+        margin: 0;
+        direction: ltr;
+        font-size: 14px
+    }
+    
+    .dataTables_length label select {
+        display: inline-block;
+        width: 50px;
+        border: none !important;
+        direction: rtl;
+    }
+    
+    .dataTables_length label select {
+        cursor: pointer;
+    }
+    
+    .dataTables_wrapper .ui-corner-br {
+        padding: 15px !important;
+        line-height: 32px !important;
+    }
+    
+    .dataTables_wrapper .dataTables_info {
+        padding: 0 !important;
+    }
+    
+    .dataTables_wrapper .dataTables_info {
+        float: right !important;
+    }
+    
+    .dataTables_info {
+        font-size: 14px;
+    }
+    
+    .dataTables_wrapper .dataTables_paginate {
+        float: left !important;
+    }
+    
+    .dataTables_wrapper .dataTables_paginate .fg-button:last-child,
+    .dataTables_wrapper .dataTables_paginate .fg-button:first-child,
+    .dataTables_wrapper .dataTables_paginate .fg-button:last-child:active,
+    .dataTables_wrapper .dataTables_paginate .fg-button:last-child:focus,
+    .dataTables_wrapper .dataTables_paginate .fg-button:first-child:active,
+    .dataTables_wrapper .dataTables_paginate .fg-button:first-child:focus {
+        background-color: white !important;
+        color: rgba(0, 0, 0, 0.54) !important;
+        border: 0 !important;
+        outline: none !important;
+    }
+    
+    .dataTables_paginate .fg-button {
+        line-height: 13px !important;
+    }
+    
+    .dataTables_paginate a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .dataTables_paginate a {
+        float: left;
+        margin: 0 5px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.54);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        border: 1px solid #c5c5c5;
+        background: #f6f6f6;
+        font-weight: normal;
+        color: #454545;
+    }
+    
+    .dataTables_filter {
+        display: none;
+    }
+    
+    .table-design-comtainer {
+        position: relative;
+        padding-bottom: 19px;
+    }
+    /*-------------------------- End Datatable --------------------------*/
     
     .datepicker-calendar-container {
         direction: initial;
@@ -740,6 +888,8 @@
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 999;
+        background-color: white;
     }
     
     .box-shadow-like-navbar {
@@ -973,7 +1123,8 @@
     }
     
     .form-fotter-box {
-        padding-top: 15px
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     
     .button-plus-white,
@@ -1031,5 +1182,9 @@
     }
     /*-------------- End boxs -----------------*/
     /*-------------- End body_content -----------------*/
+    /*-------------- Start responsive --------------*/
     
     @media (max-width: 768px) {}
+    
+    @media (min-width: 768px) {}
+    /*-------------- Start responsive --------------*/
