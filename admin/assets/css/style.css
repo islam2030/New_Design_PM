@@ -107,7 +107,8 @@
         -o-border-radius: 4px !important    ;
         width: 150px !important;
     }   
-    .select-design-Procedures button {
+    .select-design-Procedures button,
+    .select-design-Procedures > .dropdown-toggle {
         
         border: 0 !important;
         color:rgba(0, 0, 0, 0.6) !important;
@@ -120,6 +121,10 @@
         -ms-border-radius: 4px !important    ;
         -o-border-radius: 4px !important    ;
         border: 1px solid rgba(0, 0, 0, 0.32) !important;
+    }
+    .select-design-Procedures > .dropdown-toggle {
+        width: 100%;
+        text-align: right
     }
     .table .thead-dark th {
         color: #fff;
@@ -265,6 +270,9 @@
      .table-design-comtainer {
         position: relative;
         padding-bottom: 19px;
+     }
+     .table-design-comtainer .table .tbody_bg tr .link-td a {
+         color: #000 !important
      }
      .Procedures-td button {
         background-color: transparent
@@ -429,6 +437,10 @@
         border-right: .3em solid transparent;
         border-bottom: 0;
         border-left: .3em solid transparent;
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
     }
     
     .btn-dropdown {
@@ -877,6 +889,18 @@
     .body_content {
         width: calc(100% - 268px);
     }
+    .header-Project-Management-System-Control-Panel .header-inside > p {
+        display: flex
+    }
+    .header-Project-Management-System-Control-Panel .header-inside > p span i {
+        font-size: 13px;
+        line-height: 10px;
+    }
+    .header-Project-Management-System-Control-Panel .header-inside > p span {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+    }
     .navbar {
         height: 56px;
         position: fixed;
@@ -987,6 +1011,13 @@
         height: 40px;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+    }
+    .boxs .boxs-head .row .icon-back {
+        color: white;
+        padding: 0 5px 0 16px;
+    }
+    .boxs .boxs-head .row .icon-back i {
+        display: block
     }
     .boxs .boxs-head h2 {
         font-size: 16px;
@@ -1204,7 +1235,17 @@
             width: 20% !important
         }
     }
-
+    @media (max-width: 1199.98px) {
+        .buttons-List-of-projects {
+            margin-top: 20px !important;
+        }
+        .form-fields-of-projects .row .m-b-15 {
+            margin-bottom: 0 !important;
+        }
+        .form-fields-of-projects .row > div .row > div {
+            margin-bottom: 15px !important
+        }
+    }
     @media (min-width: 1365px) {
         .table .thead-dark tr .th-12 {
             width: 10% !important
@@ -1213,5 +1254,20 @@
             width: 10% !important
         }
     }
-    @media (min-width: 768px) {}    
+    @media (max-width: 991.98px) { 
+        .Procedures {
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+     }
+     @media (max-width: 767.98px) {
+        .form-fotter-box {
+            flex-direction: column;
+        }
+        .form-fotter-box .Add-a-functional-title-and-user {
+            margin-top: 15px !important
+        }
+    }    
     /*-------------- Start responsive --------------*/
