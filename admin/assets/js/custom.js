@@ -15,7 +15,10 @@ $(document).ready(function () {
     });
     /*----------- End datepicker -----------*/
     /*----------- Start tiny toggle -----------*/
-    $(".tiny-toggle").tinyToggle();
+    $(".tiny-toggle").tinyToggle({
+       
+     
+    });
 
     /*----------- End tiny toggle -----------*/
     /*----------- Start Datatable ----------------*/
